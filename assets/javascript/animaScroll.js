@@ -6,10 +6,10 @@ $(function() {
             var elOffy = $(this).offset().top
 
             if (elOffy < (windowOffY + windowHeight) &&
-                elOffy + $(this).height() > windowOffY) {
+                elOffy + 30 + $(this).height() > windowOffY) {
                 $('a').css('border-bottom', '0')
                 var target = $(this).attr('target')
-                $('.' + target).css('border-bottom', '1px solid white')
+                $('.' + target).css('border-bottom', '2px solid white')
 
 
                 return

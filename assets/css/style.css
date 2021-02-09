@@ -1,4 +1,10 @@
+.top-diferenca {
+    height: 65px;
+}
+
 nav {
+    z-index: 3;
+    position: fixed;
     padding: 20px 0;
     width: 100%;
     background: rgb(6, 157, 184);
@@ -24,7 +30,23 @@ nav ul li a:hover {
     font-size: 22px;
 }
 
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.sessao {
+    min-height: 100%;
+    padding: 30px 2%;
+}
+
+
+/*inicio media queries*/
+
 @media screen and (max-width: 316px) {
+    .top-diferenca {
+        height: 143px;
+    }
     nav ul {
         flex-direction: column;
         text-align: center;
